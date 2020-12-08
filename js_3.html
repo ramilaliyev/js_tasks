@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript задачи</title>
+</head>
+<body>
+    <h1>Задачи по JavaScript</h1>
+    <hr>
+    <h2>#3 Анализ строки</h2>
+    <p>        
+        Написать функцию которая будет принимать 
+        в качестве аргумента строку имитирующую 
+        адрес до файла. Функция должна возвращать 
+        true или false в зависимости от того есть 
+        у этого файла расширение html или нет.
+    </p>
+    <pre>
+        const path = "/users/download/index.html";
+
+        console.log(isHtml(path));
+
+        function isHtml (str) {
+            var l = str.slice(-5).toLowerCase();
+            if (l == ".html") {
+                return true;
+            } else {
+                return false;
+            }
+        }
+    </pre>
+    <script src="script3.js"></script>
+</body>
+</html>

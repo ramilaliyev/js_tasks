@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript задачи</title>
+</head>
+<body>
+    <h1>Задачи по JavaScript</h1>
+    <hr>
+    <h2>#1 Фильтрация строки</h2>
+    <p>        
+        Создать переменную со строковым значением. 
+        Сформировать переменную которая будет состоять только 
+        из ГЛАСНЫХ букв этой строки. 
+        Результат вывести в консоль.
+    </p>
+
+    <pre>
+        var s = "Впрочем, это уже совсем другая история";
+
+        var v = '';
+
+        var vowels = ['а', 'е', 'ё', 'и', 'о', 'у', 'ы', 'э', 'ю', 'я'];
+
+
+        for (var i = 0; i < s.length; i++) {
+            if (vowels.includes(s[i].toLowerCase())) {
+                v = v + s[i];
+            } 
+        }
+
+        console.log(v);
+    </pre>
+    <script src="script1.js"></script>
+</body>
+</html>
